@@ -1,0 +1,63 @@
+body {
+    background-color: green;
+    border: 8px solid blue;
+    margin: 2px;
+    padding: 2px;
+}
+
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 4px;
+    margin: 8px;
+}
+
+img {
+    border: solid 4px blanchedalmond;
+    padding: 4px;
+    margin: 20px;
+}
+
+h3, h4 {
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    padding: 4px;
+}
+
+p {
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+li {
+    color: purple;
+    font-style: italic;
+    font-size: 16px;
+    padding: 4px;
+}
+
+button, input {
+    border: solid 2px whitesmoke;
+    padding: 4px;
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: violet;
+    padding: 4px;
+}
+
+.subscribe, .login, .clickme, .testimonials {
+    color: blue;
+    background-color: blanchedalmond;
+    margin: 8px;
+}
+
