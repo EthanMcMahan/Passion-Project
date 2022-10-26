@@ -16,7 +16,7 @@ h1 {
 }
 
 img {
-    border: solid 4px blanchedalmond;
+    border: 8px solid blanchedalmond;
     padding: 4px;
     margin: 20px;
 }
@@ -53,6 +53,7 @@ a {
     text-decoration: none;
     color: violet;
     padding: 4px;
+    font-size: 18px;
 }
 
 .subscribe, .login, .clickme, .testimonials {

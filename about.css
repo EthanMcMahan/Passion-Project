@@ -62,7 +62,7 @@ p {
     text-decoration: underline;
 }
 
-img {
+img, .video {
     border: 8px solid black;
     padding: 4px;
     margin: 8px;
@@ -85,6 +85,7 @@ a {
     text-decoration: none;
     padding: 4px;
     color: fuchsia;
+    font-size: 18px;
 }
 
 .click, .form {
@@ -97,3 +98,4 @@ a {
     margin: 8px;
     padding: 8px;
 }
+
