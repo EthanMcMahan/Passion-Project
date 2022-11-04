@@ -1,7 +1,7 @@
-.upper-container {
+.middle-container, .bottom-container {
     display: flex;
 }
 
-.lower-container {
-    display: flex;
+.find-recipes {
+    margin: 0 0 20px 660px;
 }
