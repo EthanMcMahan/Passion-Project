@@ -3,5 +3,47 @@
 }
 
 .find-recipes {
-    margin: 0 0 20px 660px;
+    margin: 0 0 20px 650px;
+    color: teal;
+    background-color: palegreen;
+    border: 2px solid brown;
 }
+
+body {
+    background-color: royalblue;
+    padding: 8px;
+}
+
+.top-container, .middle-container, .bottom-container {
+    margin: 0 0 20px 0;
+}
+
+.nav-bar {
+    border: 4px solid cyan;
+}
+
+.food-choice {
+    border: 2px solid brown;
+    background-color: palegreen;
+}
+
+img {
+    border-radius: 25px;
+    border: 4px solid brown;
+}
+
+.healthy-selections {
+    text-align: center;
+    color: palegreen;
+    font-size: 36px;
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+
+.title, .description {
+color: navajowhite;
+font-size: 24px;
+font-style: italic;
+}
+
