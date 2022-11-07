@@ -11,7 +11,8 @@
 
 body {
     background-color: royalblue;
-    padding: 8px;
+    padding: 2px;
+    margin: 8px;
 }
 
 .top-container, .middle-container, .bottom-container {
