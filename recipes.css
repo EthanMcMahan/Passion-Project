@@ -26,6 +26,7 @@ body {
 img {
     border-radius: 25px;
     border: 4px solid brown;
+    margin: 8px 0 0 0;
 }
 
 .healthy-selections {
@@ -45,4 +46,12 @@ font-style: italic;
 
 .nav-bar {
     border: 4px solid cyan;
+}
+
+a {
+    text-decoration: none;
+    padding: 4px;
+    margin: 8px;
+    color: darkgoldenrod;
+    font-size: 18px;
 }
