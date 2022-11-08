@@ -19,7 +19,7 @@ body {
     margin: 0 0 20px 0;
 }
 
-.food-choice {
+#food-choice {
     border: 2px solid brown;
     background-color: palegreen;
 }

@@ -1,4 +1,4 @@
-const findRecipesButton = document.querySelector("#findRecipes")
-findRecipesButton.addEventListener("click", function(){
-    console.log("#findRecipes", foodChoice);
-});
+const findRecipesButton = document.querySelector("#findRecipes");
+findRecipesButton.addEventListener("click", function() {
+    console.log("#findRecipes", "#foodChoice");
+}, false);
