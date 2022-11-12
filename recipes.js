@@ -38,7 +38,7 @@ let obj2 = {
     title: "Hawaiian Chicken Kabobs",
     description: "These kabobs are tender, sweet, and delicious. They're easy to make and only require a few ingredients.",
     image: "https://www.allrecipes.com/thmb/dtz6-wP053dVzLgmHlW6pMcdUN4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1001317-hawaiian-chicken-kabobs-lauralovinglife-1x1-1-041f0462b70e489d902080e754361645.jpg",
-    ingredients: ["chicken breast", "pineapple", "soy sauce", "sesame oil", "brown sugar"],
+    ingredients: ["chicken breasts", "pineapple", "soy sauce", "sesame oil", "brown sugar"],
 };
 
 let obj3 = {
