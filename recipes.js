@@ -1,9 +1,3 @@
-const findRecipesButton = document.querySelector("#find-recipes");
-findRecipesButton.addEventListener("click", function() {
-    const input = document.querySelector("#food-choice").value;
-    console.log(input);
-});
-
 {/* <div class="recipe-holder">
                     <div class="recipe">
                         <img src="https://cdn.pixabay.com/photo/2014/02/01/17/28/apple-256261_960_720.jpg" width="50%" alt="image of apple stacked on books">
@@ -11,7 +5,7 @@ findRecipesButton.addEventListener("click", function() {
                         <p class="description">description</p>
                     </div>
                 </div> */}
-function createRecipe() {
+function createRecipe(recipeObj) {
 const recipeContainer = document.querySelector(".middle-container"); 
 const recipeHolder = document.createElement("div");
 recipeHolder.classList.add("recipe-holder");
@@ -20,22 +14,69 @@ recipe.classList.add("recipe");
 recipeHolder.append(recipe);
 const image = document.createElement("img");
 image.classList.add("image");
-image.src="https://cdn.pixabay.com/photo/2014/02/01/17/28/apple-256261_960_720.jpg";
+image.src= recipeObj.image;
 recipe.append(image);
 const title = document.createElement("h3");
 title.classList.add("title");
-title.innerHTML = "title";
+title.innerHTML = recipeObj.title;
 recipe.append(title);
 const description = document.createElement("p");
 description.classList.add("description");
-description.innerHTML = "description";
+description.innerHTML = recipeObj.description;
 recipe.append(description);
 recipeContainer.append(recipeHolder);                
 };
 
-for (let i = 0; i < 12; i++) {
-    createRecipe();
+let obj = {
+    title: "Healthy Coconut Oatmeal",
+    description: "A fast and healthy breakfast cereal or high-energy snack. Oatmeal made with coconut, raisins, cranberries, walnuts. Brown rice can be used in place of oatmeal.",
+    image: "https://www.allrecipes.com/thmb/XyJhW1ZGehsVjPycmiCjK1A0plk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1032552-fdec19915bd346ff8b38f6ce21fbc3a3.jpg",
+    ingredients: ["soy milk", "salt", " oats", "syrup", "raisins", "walnuts"],
+};
+
+let obj2 = {
+    title: "Hawaiian Chicken Kabobs",
+    description: "These kabobs are tender, sweet, and delicious. They're easy to make and only require a few ingredients.",
+    image: "https://www.allrecipes.com/thmb/dtz6-wP053dVzLgmHlW6pMcdUN4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1001317-hawaiian-chicken-kabobs-lauralovinglife-1x1-1-041f0462b70e489d902080e754361645.jpg",
+    ingredients: ["chicken breast", "pineapple", "soy sauce", "sesame oil", "brown sugar"],
+};
+
+let obj3 = {
+    title: "Chicken salad with Apples, Grapes, and Walnuts",
+    description: "This chicken salad with apples gets extra crunch from walnuts and a subtle sweetness from grapes. I had chicken breasts left over from a BBQ but I couldn't find a recipe I liked, so I played around and came up with this.",
+    image: "https://www.allrecipes.com/thmb/TnwXCgNQTvlb5z8sxJdkWb4LEFk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4536333-c42e71cb0f984e6ab93d3320f3f87491.jpg",
+    ingredients: ["chicken breasts", "apples", "walnuts", "grapes", "yogurt"],
+};
+
+let obj4 = {
+    title: "Cranberry Nut Oatmeal Granola Bars",
+    description: "Healthy homemade granola bars. This recipe is easily customizable. You can substitute the dried fruit, pecans, and chocolate morsels out for what you like.",
+    image: "https://www.allrecipes.com/thmb/i-JiAFKSMoGHvUeA6mikNNDiZqU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2913269-4b2dc579709f44fea276932680462949.jpg",
+    ingredients: ["oats", "cranberries", "pecans", "chocolate chips", "brown sugar"]
+};
+
+let recipes = [obj, obj2, obj3, obj4];
+
+for (let i = 0; i < recipes.length; i++) {
+    let currentRecipe = recipes[i];
+    createRecipe(currentRecipe);
     }
+
+const findRecipesButton = document.querySelector("#find-recipes");
+findRecipesButton.addEventListener("click", function() {
+    const input = document.querySelector("#food-choice").value;
+    console.log(input);
+    let filteredRecipes = recipes.filter(function(value) {
+        return value.ingredients.includes(input) });
+        console.log(filteredRecipes);
+    const recipeContainer = document.querySelector(".middle-container");
+    recipeContainer.innerHTML = "";
+    for (let i = 0; i < filteredRecipes.length; i++) {
+        let currentRecipe = filteredRecipes[i];
+        createRecipe(currentRecipe);
+        }
+});
+
 
 /* create 4 recipes: each recipe needs a title, a description, and a link to an image.
 find ingredients for each recipe.
